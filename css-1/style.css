@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --main-color: #eeedde;
+  --card-color: #e0ddaa;
+  --primary-text-color: #141e27;
+  --secondary-text-color: #203239;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+  color: var(--primary-text-color);
+  font-family: 'Open Sans', sans-serif;
+}
+
+input{
+  border: none;
+}
+
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* main css end */
+
+.logo {
+  display: inline-block;
+  font-weight: 800;
+  font-style: italic;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  border-radius: 9999px;
+}
+
+nav ul li a:hover {
+  color: var(--main-color);
+  background-color: var(--primary-text-color);
+  transition: 0.5s;
+}
+
+/* header end */
+
+.product--container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.card {
+  width: calc((100% - 80px) / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-color);
+  border-radius: 5px;
+  padding: 20px;
+  gap: 10px;
+}
+
+.card .card--header,
+.card .card--body,
+.card .card--footer {
+  width: 100%;
+}
+
+.card .card--header img {
+  width: 100%;
+}
+
+.card .card--body h2 {
+  padding: 10px 0;
+}
+
+.card .card--body p {
+  padding: 10px 0;
+}
+
+.card .card--footer {
+  height: 42px;
+  padding: 10px 0;
+}
+
+/* card end */
+
+.about {
+  padding: 20px 0;
+}
+
+.about .about--title{
+  padding: 20px 0;
+}
+
+.button {
+  height: 42px;
+  padding: 10px 20px;
+  color: var(--main-color);
+  background-color: var(--primary-text-color);
+  border-radius: 9999px;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+/* button end */
+
+.contact{
+  padding: 20px 0;
+}
+
+.contact--body{
+  padding: 20px 0;
+}
+
+.contact--body form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact--body label{
+  margin: 10px 0;
+}
+
+.contact--body textarea{
+  border: none;
+}
+
+.contact--body input{
+  padding: 10px 0;
+}
+
+.contact--footer input{
+  font-size: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid var(--primary-text-color);
+}
+
+/* footer end */
